@@ -1,4 +1,4 @@
-#react-textarea
+# react-textarea
 > Textarea with text limit for react.
 
 
