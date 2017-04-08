@@ -1,6 +1,9 @@
 # react-textarea
 > Textarea with text limit for react.
 
+## size:
++ 4.0K	react-textarea.js
++  20K	react-textarea.js.map
 
 ## resource:
 + http://www.cnblogs.com/Kummy/p/4966937.html
@@ -9,12 +12,27 @@
 
 
 ## props:
-| name | type | value | description |
-| :----| :----| :----| :----|
-| visible  | Boolean | true/false | v-show |
+```java
+  static propTypes = {
+    className:PropTypes.string,
+    max:PropTypes.number,
+    onChange:PropTypes.func,
+  };
+```
 
 
 ## usage:
-```html
-<react-textarea :visible="true" />
+```jsx
+class App extends React.Component{
+  _onChange(args){
+    console.log('test!',args);
+  }
+  render(){
+    return (
+      <div className="hello-react-textarea">
+        <ReactTextarea onChange={this._onChange.bind(this)} />
+    </div>
+    );
+  }
+}
 ```
