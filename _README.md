@@ -28,3 +28,6 @@ $react-textarea-options:(
 ```jsx
 BACKUP_USAGE
 ```
+
+## resources:
++ https://github.com/jackmoore/autosize
