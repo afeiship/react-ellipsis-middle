@@ -54,10 +54,17 @@ class App extends React.Component{
     window.rc = this.refs.rc;
   }
 
+  _onChange = inEvent =>{
+    console.log(inEvent.target.value);
+  };
+
   render(){
     return (
       <div className="hello-react-textarea">
-        <ReactTextarea ref='rc' />
+        <label>
+          <strong>My ReactTextarea</strong>
+          <ReactTextarea onChange={this._onChange} ref='rc' />
+        </label>
       </div>
     );
   }

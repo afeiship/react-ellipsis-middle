@@ -33,7 +33,6 @@ export default class extends Component {
   }
 
   _onChange = inEvent => {
-    console.log('onchnge..');
     const { value } = inEvent.target;
     const { onChange } = this.props;
     this.setState({ value }, () => {
