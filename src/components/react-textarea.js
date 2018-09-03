@@ -25,7 +25,7 @@ export default class extends Component {
   }
 
   render() {
-    const { autoSize, className, ...props } = this.props;
+    const { autosize, className, ...props } = this.props;
     return (
       <textarea
         ref={textarea => this.textarea = textarea}
