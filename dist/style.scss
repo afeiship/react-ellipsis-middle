@@ -1,0 +1,14 @@
+$react-textarea-options:(
+)!default;
+
+.react-textarea{
+    &-bd{
+        outline: none;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        &:focus{
+            border-color: darken(#ccc,10%);
+        }
+    }
+}
