@@ -5,6 +5,7 @@ import noop from 'noop';
 import autoSize from 'autosize';
 
 export default class extends Component {
+  /*===properties start===*/
   static propTypes = {
     className: PropTypes.string,
     autosize: PropTypes.bool,
@@ -16,6 +17,7 @@ export default class extends Component {
     autosize: true,
     onChange: noop
   };
+  /*===properties end===*/
 
   constructor(inProps) {
     super(inProps);
