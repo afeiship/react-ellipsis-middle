@@ -71,3 +71,6 @@ class App extends React.Component{
 }
 
 ```
+
+## resources:
++ https://github.com/jackmoore/autosize

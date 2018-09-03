@@ -26,8 +26,8 @@ export default class extends Component {
       value
     }
   }
-  
-  componentDidMount(){
+
+  componentDidMount() {
     const { autosize } = this.props;
     autosize && autoSize(this.textarea);
   }
@@ -43,13 +43,11 @@ export default class extends Component {
   render() {
     const { autosize, onChange, className, ...props } = this.props;
     return (
-      <div className={classNames('react-textarea', className)}>
-        <textarea
-          ref={ textarea => this.textarea = textarea }
-          className="react-textarea-bd"
-          value={ this.state.value }
-          onChange={ this._onChange } { ...props } />
-      </div>
+      <textarea
+        ref={textarea => this.textarea = textarea}
+        className={classNames('react-textarea', className)}
+        value={this.state.value}
+        onChange={this._onChange} {...props} />
     );
   }
 }
