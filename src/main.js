@@ -1,2 +1,2 @@
-import ReactTextarea from 'components/react-textarea';
+import ReactTextarea from './components';
 export default ReactTextarea;

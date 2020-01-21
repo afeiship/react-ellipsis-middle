@@ -1,76 +1,52 @@
 # react-textarea
-> 
+> Textarea with text limit for react.
 
-## properties:
-```javascript
+## installation
+```shell
+npm install -S @feizheng/react-textarea
+```
 
-  static propTypes = {
-    className: PropTypes.string,
-    autosize: PropTypes.bool,
-    onChange: PropTypes.func,
-    value: PropTypes.string,
-  };
+## update
+```shell
+npm update @feizheng/react-textarea
+```
 
-  static defaultProps = {
-    autosize: true,
-    onChange: noop
-  };
+## properties
+| property  | type   | default | description |
+| --------- | ------ | ------- | ----------- |
+| className | String | -       | -           |
+| value     | -      | -       | -           |
+| onChange  | -      | -       | -           |
+
+## usage
+1. import css
+  ```scss
+  @import "~@feizheng/react-textarea/dist/style.scss";
+
+  // customize your styles:
+  $react-textarea-options: ()
+  ```
+2. import js
+  ```js
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import ReactTextarea from '@feizheng/react-textarea';
   
-```
-
-## install && import:
-```bash
-npm install --save afeiship/react-textarea --registry=https://registry.npm.taobao.org
-```
-
-```js
-import ReactTextarea from 'react-textarea';
-```
-
-```scss
-// customize your styles:
-$react-textarea-options:(
-);
-
-@import 'node_modules/react-textarea/dist/style.scss';
-```
-
-
-## usage:
-```jsx
-
-// install: npm install afeiship/react-textarea --save
-// import : import ReactTextarea from 'react-textarea'
-
-class App extends React.Component{
-  state = {
-
-  };
-
-  constructor(props){
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
+  // your app:
+  class App extends React.Component{
+    render(){
+      return (
+        <ReactTextarea />
+      )
+    }
   }
 
-  _onChange = inEvent =>{
-    console.log(inEvent.target.value);
-  };
+  // render to dom:
+  ReactDOM.render(<App/>, document.getElementById('app'));
+  ```
 
-  render(){
-    return (
-      <div className="hello-react-textarea">
-        <label>
-          <strong>My ReactTextarea</strong>
-          <ReactTextarea onChange={this._onChange} ref='rc' />
-        </label>
-      </div>
-    );
-  }
-}
+## documentation
+- https://afeiship.github.io/react-textarea/
 
-```
-
-## resources:
-+ https://github.com/jackmoore/autosize
+## resources
+- https://github.com/jackmoore/autosize

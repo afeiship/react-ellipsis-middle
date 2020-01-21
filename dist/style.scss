@@ -1,14 +1,4 @@
-$react-textarea-options:(
-  padding: 10px
-)!default;
+$react-textarea-options: () !default;
 
-.react-textarea{
-  $padding: map-get($map: $react-textarea-options, $key: padding );
-  outline: none;
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: $padding;
-  &:focus{
-      border-color: darken(#ccc,10%);
-  }
+.react-textarea {
 }

@@ -1,23 +1,26 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from 'noop';
+import noop from '@feizheng/noop';
 import autoSize from 'autosize';
+import objectAssign from 'object-assign';
+
+const CLASS_NAME = 'react-textarea';
 
 export default class extends Component {
-  /*===properties start===*/
+  static displayName = CLASS_NAME;
+  static version = '__VERSION__';
   static propTypes = {
     className: PropTypes.string,
     autosize: PropTypes.bool,
     onChange: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.string
   };
 
   static defaultProps = {
-    autosize: true,
     onChange: noop
   };
-  /*===properties end===*/
 
   componentDidMount() {
     const { autosize } = this.props;
@@ -28,8 +31,10 @@ export default class extends Component {
     const { autosize, className, ...props } = this.props;
     return (
       <textarea
-        ref={textarea => this.textarea = textarea}
-        className={classNames('react-textarea', className)}{...props} />
+        ref={(textarea) => (this.textarea = textarea)}
+        className={classNames(CLASS_NAME, className)}
+        {...props}
+      />
     );
   }
 }
