@@ -81,6 +81,8 @@ npm install -S @jswork/react-textarea
   ReactDOM.render(<App />, document.getElementById('app'));
 
   ```
+## resources
+- https://github.com/jackmoore/autosize
 
 ## documentation
 - https://afeiship.github.io/react-textarea/
