@@ -5,7 +5,11 @@
   overflow: hidden;
   background: #fff;
 
-  > .is-half-text {
+  > .is-fulltext {
+    max-height: 4em;
+  }
+
+  > .is-halftext {
     position: relative;
     background: inherit;
     text-align: justify;
