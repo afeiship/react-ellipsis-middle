@@ -1,5 +1,23 @@
-$react-textarea-options: () !default;
+.react-ellipsis-middle {
+  position: relative;
+  line-height: 2;
+  height: 2em;
+  overflow: hidden;
+  background: #fff;
 
-.react-textarea {
-  // your styles
+  > .is-half-text {
+    position: relative;
+    background: inherit;
+    text-align: justify;
+    height: 2em;
+    overflow: hidden;
+    top: -4em;
+    > .is-overlap {
+      float: right;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      direction: rtl;
+    }
+  }
 }
