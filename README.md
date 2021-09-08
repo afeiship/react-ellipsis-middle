@@ -12,29 +12,25 @@ npm install -S @jswork/react-ellipsis-middle
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | Default value.                        |
-| onChange  | func   | false    | noop    | The change handler.                   |
-
+__GENERATE_DOCS__
 
 ## usage
 1. import css
   ```scss
-  @import "~@jswork/boilerplate-react-component/dist/style.css";
+  @import "~@jswork/react-ellipsis-middle/dist/style.css";
 
   // or use sass
-  @import "~@jswork/boilerplate-react-component/dist/style.scss";
+  @import "~@jswork/react-ellipsis-middle/dist/style.scss";
 
   // customize your styles:
-  $boilerplate-react-component-options: ()
+  $react-ellipsis-middle-options: ()
   ```
 2. import js
   ```js
   import React from 'react';
-  import ReactEllipsisMiddle from '../@jswork/boilerplate-react-component';
+  import ReactEllipsisMiddle from '@jswork/react-ellipsis-middle';
   import styled from 'styled-components';
+  import '../../src/components/style.scss';
 
   const Container = styled.div`
     width: 80%;
@@ -44,7 +40,13 @@ npm install -S @jswork/react-ellipsis-middle
   export default (props: any) => {
     return (
       <Container>
-        <ReactEllipsisMiddle />
+        <ReactEllipsisMiddle size="120px">
+          CSS 测试标题，这是一个稍微有点长的标题，超出一行以后才会有title提示，标题是 实现优惠券的技巧 - 2021-03-26
+        </ReactEllipsisMiddle>
+
+        <ReactEllipsisMiddle size="50%">
+          CSS 测试标题，这是一个稍微有点长的标题，超出一行以后才会有title提示，标题是 实现优惠券的技巧 - 2021-03-26
+        </ReactEllipsisMiddle>
       </Container>
     );
   };
