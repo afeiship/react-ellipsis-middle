@@ -11,9 +11,6 @@
 npm install -S @jswork/react-ellipsis-middle
 ```
 
-## properties
-__GENERATE_DOCS__
-
 ## usage
 1. import css
   ```scss
@@ -72,6 +69,9 @@ __GENERATE_DOCS__
   };
 
   ```
+
+## preview
+- https://afeiship.github.io/react-ellipsis-middle/
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-ellipsis-middle/blob/master/LICENSE.txt).

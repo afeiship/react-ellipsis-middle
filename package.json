@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-ellipsis-middle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ellipsis in middle for single line text.",
   "license": "MIT",
   "main": "dist/index.js",
